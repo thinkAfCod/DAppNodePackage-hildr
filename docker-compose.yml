@@ -1,12 +1,12 @@
 version: "3.5"
 services:
-  op-node:
+  hildr:
     build:
-      context: op-node
+      context: hildr
       args:
-        UPSTREAM_VERSION: v1.7.1
+        UPSTREAM_VERSION: v0.3.3
     environment:
       - CUSTOM_L1_RPC
       - CUSTOM_L1_BEACON_API
     restart: unless-stopped
-    image: "op-node.op-node.dnp.dappnode.eth:0.1.2"
+    image: "hildr.hildr.dnp.dappnode.eth:0.0.1"
